@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    border: 5% var(--cor-terciaria);
+    padding: 1% 0% 0% 1%;
+}
+
+.cabecalhoMenu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5%;
+}
+
+.CMLink{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+
+
+body {
+    /* height: 100hv; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cidade {
+    color: var(--cor-terciaria)
+}
+
+.corpo {
+    padding: 5% 5%; /*the first padding applies to the top, the second to the right and left, the third to the bottom*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.corpin {
+    gap: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightside {
+    padding: 10%;
+    width: 55%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.names{
+    width: 80%;
+}
+
+.logos{
+    width: 80%;
+}
+
+.lefttext {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.titulo {
+    font-family: var(--font-primaria);
+    font-size: 8rem;
+}
+
+.tituloMenor {
+    font-family: var(--font-primaria);
+    font-size: 2rem;
+}
+
+.sobre {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+}
+
+.embaixo {
+    padding: 5%;
+    gap: 5%;
+    display: flex;
+    align-items: stretch;
+}
+
+.buttons_add {
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.addbt {
+    border: none;
+    border-radius: 16px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    width: 121px;
+    height: 106px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3.5rem;
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.text_boxes {
+    gap: 155px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 {
+    background-color: var(--cor-primaria);
+    border-radius: 10px;
+    width: 162px;
+    height: 106px;
+    border: 10px var(--cor-terciaria);
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+}   
+
+.names_imgs {
+    display: flex;
+}
+
+
+.botaoLink:hover{
+    background-color: var(--cor-hover);
+}
+
+footer {
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: end;
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+}

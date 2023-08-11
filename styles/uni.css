@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --font-primaria: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    border: 5% var(--cor-terciaria);
+    padding: 1% 0% 0% 1%;
+}
+
+.cabecalhoMenu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5%;
+}
+
+.CMLink{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.corpo {
+    padding: 10%; /*the first padding applies to the top, the second to the right and left, the third to the bottom*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.corpin {
+    padding: 5% 5% 5%;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre {
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+}
+
+.titulo {
+    font-family: var(--font-primaria);
+    font-size: 8rem;
+    text-align: center;
+}
+
+.tituloMenor {
+    font-family: var(--font-primaria);
+    font-size: 2rem;
+}
+
+footer {
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: end;
+    padding: 1.5%;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+}
+
+.botaoLink{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid  var(--cor-terciaria);
+    width: 35%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalhoMenu{
+        justify-content: center;
+    }
+
+    .corpo{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+}
